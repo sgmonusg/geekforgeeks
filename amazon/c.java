@@ -1,21 +1,12 @@
 import java.io.*;
 import java.util.*;
 public class c{
-<<<<<<< HEAD
 	static boolean ispair(int arr[] , int num){
 		int arr_hash[] = new int[1000];
 		for(int i = 0 ; i < arr.length ; i++){
 			arr_hash[arr[i]+500] = 1;
 		}
 		for(int i = 0 ; i < arr.length ; i++){
-=======
-	ispair(int arr[] , int num){
-		int arr_hash[] = new int[1000];
-		for(int i = 0 ; i < arr.lenght() ; i++){
-			arr_hash[arr[i]+500] = 1;
-		}
-		for(int i = 0 ; i < arr.lenght() ; i++){
->>>>>>> 3d0a654e11fb489b73a72f2f2bf82c31d23bd5cb
 			if(arr[i] == 0){
 				if(num ==0 ){
 					return true;
@@ -27,11 +18,6 @@ public class c{
 		}
 		return false;
 	}
-<<<<<<< HEAD
-	/**
-	 * @param
-	 * @return
-	 */
 	static int equil(int arr[]){
 		int sum = 0 ;
 		int left_sum = 0;
@@ -40,16 +26,6 @@ public class c{
 		}
 		left_sum = 0;
 		for(int i = 0 ;i< arr.length ; i++){
-=======
-	static int equil(int arr[]){
-		int sum = 0 ;
-		int left_sum = 0;
-		for(int i = 0 ;i< arr.lenght() ; i++){
-			sum =sum+arr[i];
-		}
-		left_sum = 0;
-		for(int i = 0 ;i< arr.lenght() ; i++){
->>>>>>> 3d0a654e11fb489b73a72f2f2bf82c31d23bd5cb
 			left_sum = left_sum + arr[i];
 			sum =sum -arr[i];
 			if(left_sum == sum){
