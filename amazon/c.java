@@ -1,12 +1,12 @@
 import java.io.*;
 import java.util.*;
 public class c{
-	ispair(int arr[] , int num){
+	static boolean ispair(int arr[] , int num){
 		int arr_hash[] = new int[1000];
-		for(int i = 0 ; i < arr.lenght() ; i++){
+		for(int i = 0 ; i < arr.length ; i++){
 			arr_hash[arr[i]+500] = 1;
 		}
-		for(int i = 0 ; i < arr.lenght() ; i++){
+		for(int i = 0 ; i < arr.length ; i++){
 			if(arr[i] == 0){
 				if(num ==0 ){
 					return true;
@@ -18,14 +18,18 @@ public class c{
 		}
 		return false;
 	}
+	/**
+	 * @param
+	 * @return
+	 */
 	static int equil(int arr[]){
 		int sum = 0 ;
 		int left_sum = 0;
-		for(int i = 0 ;i< arr.lenght() ; i++){
+		for(int i = 0 ;i< arr.length ; i++){
 			sum =sum+arr[i];
 		}
 		left_sum = 0;
-		for(int i = 0 ;i< arr.lenght() ; i++){
+		for(int i = 0 ;i< arr.length ; i++){
 			left_sum = left_sum + arr[i];
 			sum =sum -arr[i];
 			if(left_sum == sum){
@@ -89,3 +93,4 @@ public class c{
 		Scanner sc = new Scanner(System.in);
 		int a  = sc.nextInt();
 	}
+}
